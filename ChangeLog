@@ -1,0 +1,136 @@
+2009-06-03  Rob Caelers <robc@krandor.nl>
+
+	* src/quartz-style.c (draw_check):Add drawing of GtkCellRendererToggle.
+
+2009-06-03  Rob Caelers <robc@krandor.nl>
+
+	* src/quartz-style.c (draw_flat_box): Fix background color of
+	TreeView widget.
+
+2009-06-03  Rob Caelers <robc@krandor.nl>
+
+	* src/quartz-style.c (style_setup_rc_style): Fix font size for
+	Gtkmm TreeView widget (widget is called gtkm__GtkTreeView and was
+	not matched by style rules).
+
+2009-06-02  Rob Caelers <robc@krandor.nl>
+
+	* src/quartz-style.c (draw_box): Add support for the (now
+	obsolete) Gtk::OptionMenu
+
+2009-06-01  Rob Caelers <robc@krandor.nl>
+
+	* src/quartz-style.c (draw_box): Add support for vertical progress
+	bars.
+
+2009-06-01  Rob Caelers <robc@krandor.nl>
+
+	* .gitignore:
+	* src/.gitignore: Add .git ignore files.
+
+2008-10-30  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c (is_icon_only_button, draw_box): Remove the
+	heuristics that tried to decide if a square or aqua button should
+	be used depending on the size. It needs to be improved before it's
+	enabled again. Use square buttons for image only buttons in the
+	meantime.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: Minor style cleanups.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (draw_layout): Add missing parameters for
+	area, widget, etc. Fixes missing clipping of text.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: Change get_context so it takes the window
+	and handle pixmaps as well. Remove the special cases since they
+	are not needed anymore. Add release_context and do the same
+	special casing in there.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* theme/gtkrc: Change menu icon size to 16x16.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (style_setup_rc_styles): Remove unused
+	styles.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (find_last_notebook_tab_forall),
+	(draw_extension): Add notebook tab drawing.
+	* theme/gtkrc: Forgot to commit those before.
+
+2008-10-29  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (draw_shadow): Improve the look of scrolled
+	window, frame, entry. Remove broken notebook code for now, it's
+	not useful in its current state.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c Small whitespace cleanup.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c (get_context): Add helper for getting the
+	context, will be used to clip to the area when necessary soon.
+	(draw_arrow): Don't draw arrows for spin buttons, they are drawn
+	by the button itself.
+	- Change all drawing functions to use get_context.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c (style_setup_rc_styles): Handle subclasses of
+	treeview as well.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c (draw_handle): Implement drawing paned
+	handles.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c (style_setup_rc_styles): Use tooltip colors
+	from the color scheme.
+
+2008-10-28  Richard Hult  <richard@imendio.com>
+
+	* theme/gtkrc: Add a color scheme.
+
+2008-04-08  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (draw_arrow), (draw_extension): Small coding
+	style cleanups.
+
+2008-04-08  Richard Hult  <richard@imendio.com>
+
+	* src/*: More style cleanups, make all the rc style definitions
+	use the macros. Add copyright information and header guards.
+
+2008-04-07  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-rc-style.h:
+	* src/quartz-style.c:
+	* src/quartz-style.h:
+	* src/test.c: More style fixes.
+
+2008-04-07  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-draw.c:
+	* src/quartz-style.c: Coding style fixes.
+
+2008-04-07  Richard Hult  <richard@imendio.com>
+
+	* src/quartz-style.c: (draw_arrow): Fix typo, makes arrowing
+	drawing work.
+
+2007-04-07  Alberto Ruiz <aruiz@gnome.org>
+
+	* Initial commit.
