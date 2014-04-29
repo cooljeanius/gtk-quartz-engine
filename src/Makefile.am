@@ -15,7 +15,7 @@ libquartz_la_SOURCES = \
 libquartz_la_LDFLAGS = -module -avoid-version -no-undefined -framework Carbon -framework AppKit
 libquartz_la_LIBADD =  $(GTK_LIBS) -lobjc
 
-noinst_PROGRAMS = test
+check_PROGRAMS = testquartzengine
 
-test_SOURCES = test.c
-test_LDADD = $(GTK_LIBS)
+testquartzengine_SOURCES = test.c
+testquartzengine_LDADD = $(GTK_LIBS)
