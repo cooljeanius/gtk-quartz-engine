@@ -1,7 +1,7 @@
 #                                               -*- Autoconf -*-
 # Process this file with autoconf to produce a configure script.
 
-AC_INIT([quartz-engine],[0.1],[aruiz@gnome.org])
+AC_INIT([quartz-engine],[0.2.1],[aruiz@gnome.org])
 AC_PREREQ([2.69])
 AC_CONFIG_MACRO_DIR([m4])
 AC_CONFIG_AUX_DIR([config])
